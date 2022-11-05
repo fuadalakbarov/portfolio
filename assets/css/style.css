@@ -45,8 +45,10 @@ body{font-family: Roboto;}
     height: 100vh;
     opacity: 0;
     overflow-x: hidden;
+    z-index: -1;
 
 }
+
 
 .nav-links-overlay{
     display: flex;
@@ -68,6 +70,7 @@ body{font-family: Roboto;}
 }
 
 
+
 .fa-xmark{
     position: absolute;
     top: 4%;
@@ -81,3 +84,121 @@ body{font-family: Roboto;}
     transition: .8s ease;
     transform: rotate(360deg);
 }
+
+.introsection{
+    display: flex;
+    padding: 0 112.5px;
+    max-width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    
+   
+}
+
+.intro-left-side h1{
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 82px;
+    letter-spacing: 2px;
+}
+
+.introsection > .intro-left-side h1 span{
+    color: #FF8A56;
+   
+}
+
+.intro-left-side {
+    flex-basis: 60%;
+    padding-top: 117px;
+}
+
+.intro-left-side small{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+    color: #666;
+    margin: 20px 0;
+    
+}
+
+.intro-left-side button{
+    
+    background-color: #000;
+    color: #fff;
+    width: 151px;
+    height:58px;
+    margin-right: 40px;
+
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+.intro-left-side download{
+    margin-right: 10px;
+}
+
+.buttons-group img{
+  margin-right: 10px;
+}
+
+    
+
+
+.introsection > .intro-right-side{
+  flex:1;
+    padding-top: 70px;
+    min-width: 400px;
+}
+
+.introsection > .intro-right-side img {
+    width: 100%;
+}
+
+@media (max-width:1339px) and (min-width: 841px){
+    .intro-left-side{
+        margin: 0 auto;
+        
+    }     
+        
+    .introsection{
+        padding-left: 0;
+        padding-right: 0;
+        
+    }
+    .fa-bars {
+        font-size: 34px;
+        cursor: pointer;
+}}
+
+@media (max-width:840px){
+    .intro-left-side h1{
+    font-size: 54px; 
+    
+}}
+.fa-bars {
+    font-size: 34px;
+    cursor: pointer;
+
+
+@media (max-width: 768px){
+
+    .header {
+        padding: 20px;
+    }
+
+    .fa-bars {
+        font-size: 34px;
+        cursor: pointer;
+    }
+    .intro-left-side{
+
+        text-align: center;
+        flex-basis: 100%;
+    }
+
+    .introsection {
+        padding: 0 20px;
+
+    }
+}}
