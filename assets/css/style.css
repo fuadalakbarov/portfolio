@@ -129,7 +129,7 @@ body{font-family: Roboto;}
     width: 151px;
     height:58px;
     margin-right: 40px;
-
+    cursor: pointer;
     margin-top: 20px;
     font-size: 22px;
 }
@@ -171,7 +171,7 @@ body{font-family: Roboto;}
     cursor: pointer;
 
 
-@media (max-width: 768px){
+@media (max-width:768px){
 
     .header {
         padding: 20px;
@@ -195,10 +195,11 @@ body{font-family: Roboto;}
     }
 }}
 
-.trusted-by-section {
+.trusted-by-section{
     display: flex;
-    flex-direction: column
+    flex-direction: column;
 }
+
 
 .trusted-by-section h4 {
     text-align: center;
@@ -219,4 +220,66 @@ body{font-family: Roboto;}
     .company:not(:first-child){
         display: none;
     }
+}
+
+.services-cards li{
+    list-style-type: square;
+    list-style-position: inside;
+    font-weight: 700;
+    font-size:16px;
+    line-height: 28px;
+
+}
+
+.services h6{
+    text-align: center;
+    padding: 198px 0 0 20px;
+    color: #FF5E69;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 22px;
+    letter-spacing: 4px;
+}
+
+
+.services h2{
+    text-align: center;
+    padding: 20px;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 59px;   
+}
+
+.services-cards{
+    display: flex;
+    justify-content: space-between;
+    padding: 117px 171px 230px; 
+    flex-wrap: wrap;
+}
+
+
+.services-cards img{padding-bottom: 40px;
+
+}
+
+.service-card{
+    width: 30%;
+    min-width: 300px;
+}
+
+.service-card h3{
+    font-weight:700;
+    font-size: 24px;
+    line-height: 26.4px;
+    padding-bottom: 25px;
+
+}
+
+.service-card p{
+    color:#666;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    padding-bottom: 21px;
+    
 }
